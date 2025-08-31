@@ -62,7 +62,12 @@ scrape_configs:
     static_configs:
       - targets: 
         - 'pico-climate-e38a2a2a.lan:80'
-        - 'pico-climate-e3917228.lan:80'
+        labels:
+          location: "Chris office"
+      - targets:
+        - 'pico-climate-934d9732.lan:80'
+        labels:
+          location: "Inside"
 
 
 
